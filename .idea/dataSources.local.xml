@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="meinsuperagentur@localhost" uuid="f3666176-ddbb-46c0-97b9-aa4e3605833c">
+      <database-info product="MySQL" version="5.7.23" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.4.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:meinsuperagentur</introspection-schemas>
+    </data-source>
+  </component>
+</project>
