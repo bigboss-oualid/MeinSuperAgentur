@@ -4,18 +4,21 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PropertyRepository")
+ * @UniqueEntity("title")
  */
 class Property
 {
     const HEAT = [
-        0 => 'Strom',
-        1 => 'Gaz',
-        2 => 'Öl',
-        4 => 'Holz'
+        0 => 'Electric',
+        1 => 'Gas',
+        2 => 'Oil',
+        4 => 'Wood'
     ];
     /**
      * @ORM\Id()
@@ -25,6 +28,9 @@ class Property
     private $id;
 
     /**
+     * @Assert\Length(
+     *       min = 5,
+     *       max = 250)
      * @ORM\Column(type="string", length=255)
      */
     private $title;
@@ -36,6 +42,9 @@ class Property
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Range(
+     *      min = 10,
+     *      max = 400,)
      */
     private $surface;
 
@@ -69,17 +78,18 @@ class Property
      */
     private $city;
 
-    /**
+	/**
      * @ORM\Column(type="string", length=255)
      */
-    private $adress;
+    private $address;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $postal_code;
+	/**
+	 * @Assert\Regex("/^[0-9]{5}$/")
+	 * @ORM\Column(type="string", length=255)
+	 */
+	private $postal_code;
 
-    /**
+	/**
      * @ORM\Column(type="boolean", options={"default": false})
      */
     private $sold = false;
@@ -223,14 +233,14 @@ class Property
         return $this;
     }
 
-    public function getAdress(): ?string
+    public function getAddress(): ?string
     {
-        return $this->adress;
+        return $this->address;
     }
 
-    public function setAdress(string $adress): self
+    public function setAddress(string $address): self
     {
-        $this->adress = $adress;
+        $this->address = $address;
 
         return $this;
     }
