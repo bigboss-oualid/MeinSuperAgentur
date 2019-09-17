@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Cocur\Slugify\Slugify;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -99,9 +101,15 @@ class Property
      */
     private $created_at;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Specification", inversedBy="properties")
+     */
+    private $specifications;
+
     public function __construct ()
     {
         $this->created_at = new \DateTime();
+        $this->specifications = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -193,9 +201,9 @@ class Property
     }
 
 	public function getFormattedPrice(): string
-	{
-		return number_format($this->price, 0, '', ' ') ;
-	}
+                     	{
+                     		return number_format($this->price, 0, '', ' ') ;
+                     	}
 
     public function setPrice(int $price): self
     {
@@ -210,9 +218,9 @@ class Property
     }
 
 	public function getHeatType(): string
-	{
-		return self::HEAT[$this->heat];
-	}
+                     	{
+                     		return self::HEAT[$this->heat];
+                     	}
 
     public function setHeat(int $heat): self
     {
@@ -277,6 +285,34 @@ class Property
     public function setCreatedAt(\DateTimeInterface $created_at): self
     {
         $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Specification[]
+     */
+    public function getSpecifications(): Collection
+    {
+        return $this->specifications;
+    }
+
+    public function addSpecification(Specification $specification): self
+    {
+        if (!$this->specifications->contains($specification)) {
+            $this->specifications[] = $specification;
+            $specification->addProperty($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSpecification(Specification $specification): self
+    {
+        if ($this->specifications->contains($specification)) {
+            $this->specifications->removeElement($specification);
+            $specification->removeProperty($this);
+        }
 
         return $this;
     }

@@ -3,6 +3,8 @@
 namespace App\Form;
 
 use App\Entity\PropertySearch;
+use App\Entity\Specification;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -27,6 +29,13 @@ class PropertySearchType extends AbstractType
 		            'placeholder' => 'Minimale Wohnfläche'
 	            ]
             ])
+	        ->add('specifications', EntityType::class, [
+				'required'     => false,
+		        'label'        => false,
+		        'class'        => Specification::class,
+		        'choice_label' => 'name',
+		        'multiple'       => true
+	        ])
         ;
     }
 

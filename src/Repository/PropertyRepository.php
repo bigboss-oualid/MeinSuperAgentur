@@ -47,6 +47,17 @@ class PropertyRepository extends ServiceEntityRepository
 
         }
 
+	    if(($specifications = $search->getSpecifications())->count() > 0)
+	    {
+	    	$k = 0;
+	    	foreach($specifications as $specification) {
+			    $k++;
+			    $query = $query
+				    ->andWhere(":specification$k MEMBER OF p.specifications")
+				    ->setParameter("specification$k", $specification);
+		    }
+	    }
+
         return $query->getQuery();
     }
 

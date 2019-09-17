@@ -46,6 +46,8 @@ class AdminPropertyController extends AbstractController
 
 	/**
 	 * @Route("/admin/property/create", name="admin.property.new")
+	 * @param Request $request
+	 *
 	 * @return Response
 	 */
 	public function new(Request $request): Response
