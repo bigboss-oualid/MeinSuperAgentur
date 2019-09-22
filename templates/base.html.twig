@@ -26,9 +26,23 @@
                 {% if app.user %}
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="{{ path('logout') }}" class="nav-link font-weight-bold">Ausloggen</a>
+                        <a href="{{ path('admin.property.index') }}" class="nav-link font-weight-bold">
+                            <span class="btn btn-outline-info" style="color: #000000;">
+                                <i class="fa fa-database"></i>
+                                Verwaltung
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ path('logout') }}" class="nav-link font-weight-bold">
+                            <span class="btn btn-outline-info" style="color: #000000;">
+                                <i class="fa fa-user-times"></i>
+                                Ausloggen
+                            </span>
+                        </a>
                     </li>
                 </ul>
+
                 {% else %}
                     <ul class="navbar-nav">
                         <li class="nav-item">

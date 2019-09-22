@@ -10,16 +10,25 @@
                     {% if error %}
                         <div class="alert alert-danger">{{ error.messageKey | trans(error.messagedata, 'security') }}</div>
                     {% endif %}
+
                     <form action="{{ path('login') }}" method="post">
-                        <div class="form-group">
-                            <label for="username">Anmeldename</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: #085dff;">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
                             <input type="text" id="username" name="_username" class="form-control" value="{{ last_username }}">
                         </div>
-                        <div class="form-group">
-                            <label for="password">Passwort</label>
+                        <div class="input-group mt-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="color: #085dff;"><i class="fa fa-lock"></i></span>
+                            </div>
                             <input type="password" id="password" name="_password" class="form-control">
                         </div>
-                        <button class="btn btn-primary" type="submit"><i class="fa fa-star"></i> Anmelden</button>
+                        <div class="text-center">
+                            <button class="mt-2 btn btn-outline-primary" type="submit"><i class="fa fa-star"></i> Anmelden</button>
+                        </div>
                     </form>
                 </div>
             </div>
