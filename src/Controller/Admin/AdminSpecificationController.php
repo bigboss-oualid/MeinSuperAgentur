@@ -87,7 +87,7 @@ class AdminSpecificationController extends AbstractController
 	 */
     public function delete(Request $request, Specification $specification): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$specification->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('admin/delete'.$specification->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($specification);
             $entityManager->flush();

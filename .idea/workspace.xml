@@ -2,18 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32a45dc7-1c08-49d0-bbaf-90eae9d53528" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notification/ContactNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/emails/contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPictureController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f3666176-ddbb-46c0-97b9-aa4e3605833c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f3666176-ddbb-46c0-97b9-aa4e3605833c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/properties/empty.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,6 +51,24 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="meinsuperagentur@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meinsuperagentur@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meinsuperagentur@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="meinsuperagentur: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="meinsuperagentur@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="meinsuperagentur: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="picture: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -48,7 +76,113 @@
     <favorites_list name="MaSuperAgence" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Property.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Property.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2836">
+              <caret line="362" column="20" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="20" />
+              <folding>
+                <element signature="e#30#78#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_property.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/property/_property.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+              <folding>
+                <element signature="e#407#420#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="52" selection-start-column="52" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vich_uploader.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/home.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/property/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="32" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/admin/property/_form.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+              <folding>
+                <element signature="e#720#740#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminPictureController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminPictureController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <element signature="e#39#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="576">
+              <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminSpecificationController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+              <folding>
+                <element signature="e#40#69#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -64,6 +198,15 @@
       <find>&quot;/assets/img/logo-small.png</find>
       <find>reg</find>
       <find>hello</find>
+      <find>port</find>
+      <find>localhost</find>
+      <find>server</find>
+      <find>select2</find>
+      <find>btn</find>
+      <find>publiv</find>
+      <find>image</find>
+      <find>getFile</find>
+      <find>getPic</find>
     </findStrings>
     <replaceStrings>
       <replace>address</replace>
@@ -77,16 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/pages/home.html.twig" />
-        <option value="$PROJECT_DIR$/templates/admin/properrty/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Migrations/Version20190910175522.php" />
-        <option value="$PROJECT_DIR$/var/log/dev.log" />
-        <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
-        <option value="$PROJECT_DIR$/config/packages/translation.yaml" />
-        <option value="$PROJECT_DIR$/templates/admin/property/index.html.twig" />
-        <option value="$PROJECT_DIR$/translations/forms.de.yaml" />
-        <option value="$PROJECT_DIR$/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
@@ -96,38 +229,48 @@
         <option value="$PROJECT_DIR$/templates/admin/specification/_form.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/SpecificationType.php" />
         <option value="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php" />
         <option value="$PROJECT_DIR$/templates/admin/specification/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Specification.php" />
         <option value="$PROJECT_DIR$/src/Migrations/Version20190917140348.php" />
         <option value="$PROJECT_DIR$/templates/admin/specification/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/PropertySearch.php" />
-        <option value="$PROJECT_DIR$/src/Form/PropertySearchType.php" />
         <option value="$PROJECT_DIR$/templates/admin/property/new.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/property/edit.html.twig" />
         <option value="$PROJECT_DIR$/templates/property/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/PropertyRepository.php" />
         <option value="$PROJECT_DIR$/src/Migrations/Version20190917182458.php" />
-        <option value="$PROJECT_DIR$/templates/admin/property/_form.html.twig" />
-        <option value="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
         <option value="$PROJECT_DIR$/src/Listener/ImageCacheSubsriber.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
-        <option value="$PROJECT_DIR$/src/Form/PropertyType.php" />
-        <option value="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" />
-        <option value="$PROJECT_DIR$/templates/property/_property.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/Property.php" />
         <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/config/packages/liip_imagine.yaml" />
         <option value="$PROJECT_DIR$/var/cache/dev/ContainerIqwAl2a/getLiipImagine_ExtensionGuesserService.php" />
         <option value="$PROJECT_DIR$/src/Form/ContactType.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Notification/ContactNotification.php" />
         <option value="$PROJECT_DIR$/src/Entity/Contact.php" />
         <option value="$PROJECT_DIR$/src/Controller/PropertyController.php" />
-        <option value="$PROJECT_DIR$/templates/property/show.html.twig" />
         <option value="$PROJECT_DIR$/templates/emails/contact.html.twig" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/packages/webpack_encore.yaml" />
+        <option value="$PROJECT_DIR$/config/packages/assets.yaml" />
+        <option value="$PROJECT_DIR$/node_modules/@symfony/webpack-encore/lib/config-generator.js" />
+        <option value="$PROJECT_DIR$/src/Form/PropertySearchType.php" />
+        <option value="$PROJECT_DIR$/templates/property/show.html.twig" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/src/Form/PropertyType.php" />
+        <option value="$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Picture.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/AdminPictureController.php" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/src/Entity/Property.php" />
+        <option value="$PROJECT_DIR$/templates/property/_property.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/packages/vich_uploader.yaml" />
+        <option value="$PROJECT_DIR$/templates/pages/home.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/property/_form.html.twig" />
       </list>
     </option>
   </component>
@@ -137,8 +280,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -260,6 +408,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -274,6 +424,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -285,65 +437,53 @@
             <path>
               <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
               <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
               <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-              <item name="thumb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-              <item name="thumb" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-              <item name="thumb" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
               <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
@@ -367,7 +507,7 @@
               <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
               <item name="MaSuperAgence" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Notification" type="462c0819:PsiDirectoryNode" />
+              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MaSuperAgence" type="b2602c69:ProjectViewProjectNode" />
@@ -409,8 +549,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,6 +568,8 @@
       <recent name="C:\wamp64\www\symphony\MaSuperAgence\templates\admin\specification" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\symphony\MaSuperAgence\public\images" />
+      <recent name="C:\wamp64\www\symphony\MaSuperAgence\public\media" />
       <recent name="C:\wamp64\www\symphony\MaSuperAgence\src\Controller\Admin" />
     </key>
   </component>
@@ -518,19 +658,22 @@
       <workItem from="1568482110306" duration="5508000" />
       <workItem from="1568560365581" duration="8528000" />
       <workItem from="1568742665921" duration="17863000" />
-      <workItem from="1569147183466" duration="13481000" />
+      <workItem from="1569147183466" duration="15667000" />
+      <workItem from="1569177227941" duration="14397000" />
+      <workItem from="1569605580742" duration="11510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113412000" />
+    <option name="totallyTimeSpent" value="141505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32899022" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -549,10 +692,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.91639525" visible="true" weight="0.14166667" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9142237" visible="true" weight="0.10654762" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.083604775" side_tool="true" visible="true" weight="0.14166667" />
+      <window_info id="Favorites" order="2" sideWeight="0.08577633" side_tool="true" visible="true" weight="0.10654762" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="9" weight="0.22247972" />
       <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -561,6 +703,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,275 +713,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/knp_paginator.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Option.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190917123646.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190917130838.php" />
-    <entry file="file://$PROJECT_DIR$/templates/admin/specification/_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/specification/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-          <folding>
-            <element signature="e#732#769#0#PHP" expanded="true" />
-            <element signature="e#1486#1513#1#PHP" expanded="true" />
-            <element signature="e#1533#1568#0#PHP" expanded="true" />
-            <element signature="e#2252#2279#1#PHP" expanded="true" />
-            <element signature="e#2492#2528#0#PHP" expanded="true" />
-            <element signature="e#3056#3083#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/specification/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Specification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190917140348.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="29" column="110" selection-start-line="29" selection-start-column="110" selection-end-line="29" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f3666176-ddbb-46c0-97b9-aa4e3605833c/schema/meinsuperagentur/table/property_specification">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f3666176-ddbb-46c0-97b9-aa4e3605833c/schema/meinsuperagentur/table/specification">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f3666176-ddbb-46c0-97b9-aa4e3605833c/schema/meinsuperagentur/table/migration_versions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/specification/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/SpecificationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/property/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/property/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/PropertyRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/PropertySearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/PropertySearchType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
-          <folding>
-            <element signature="e#28#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190917182458.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Event/PreUpdateEventArgs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/routing.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/cache.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="54" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/PropertyType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="e#28#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/bundles.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="37" column="50" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="50" />
-          <folding>
-            <element signature="e#39#63#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pages/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-          <folding>
-            <element signature="e#31#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/property/_property.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/ContainerIqwAl2a/getLiipImagine_ExtensionGuesserService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="11" column="122" selection-start-line="11" selection-start-column="122" selection-end-line="11" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/property/_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/ContainerIqwAl2a/getLiipImagine_ExtensionGuesserService.php" />
     <entry file="file://$PROJECT_DIR$/src/Form/ContactType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
@@ -846,13 +728,6 @@
           <folding>
             <element signature="e#28#51#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -870,40 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/property/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Property.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="21" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/property/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#320#338#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Notification/ContactNotification.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#36#59#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,65 +768,297 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4887">
           <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bundles.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/prod/webpack_encore.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="3053" column="12" selection-start-line="3053" selection-start-column="12" selection-end-line="3053" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/webpack_encore.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@symfony/webpack-encore/lib/context.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@symfony/webpack-encore/lib/WebpackConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2610">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/assets.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="77" lean-forward="true" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@symfony/webpack-encore/lib/config-generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="629" lean-forward="true" selection-start-line="629" selection-end-line="629" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@symfony/webpack-encore/lib/config/validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2214">
+          <caret line="79" column="30" selection-start-line="79" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@symfony/webpack-encore/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="1349" column="12" lean-forward="true" selection-start-line="1349" selection-start-column="12" selection-end-line="1349" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/PropertySearchType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="42" />
           <folding>
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4728#4741#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#5568#5581#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#28#58#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/select2/dist/js/select2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/select2/dist/js/select2.full.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/select2/src/js/select2/data/select.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/select2/src/js/select2/selection/multiple.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/select2/src/js/select2/core.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/entrypoints.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/manifest.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/property/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="810">
+          <caret line="31" column="108" selection-start-line="31" selection-start-column="108" selection-end-line="31" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190910162629.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190917185959.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-243" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190927182946.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://f3666176-ddbb-46c0-97b9-aa4e3605833c/schema/meinsuperagentur/table/picture">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Listener/ImageCacheSubscriber.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#31#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/property/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="32" column="87" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Picture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+          <folding>
+            <element signature="e#30#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/PropertyType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <element signature="e#28#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminSpecificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <element signature="e#40#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/AdminPictureController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="e#39#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Property.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2836">
+          <caret line="362" column="20" selection-start-line="362" selection-start-column="20" selection-end-line="362" selection-end-column="20" />
+          <folding>
+            <element signature="e#30#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/property/_property.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding>
+            <element signature="e#407#420#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/vich_uploader.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/property/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="32" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/home.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/property/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding>
+            <element signature="e#720#740#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -990,6 +1067,17 @@
   <component name="masterDetails">
     <states>
       <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
