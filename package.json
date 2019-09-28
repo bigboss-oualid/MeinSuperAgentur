@@ -18,6 +18,9 @@
         "babel-preset-es2017": "^6.24.1",
         "babel-preset-es2019": "^1.0.0",
         "jquery": "^3.4.1",
-        "select2": "^4.0.10"
+        "leaflet": "^1.5.1",
+        "places.js": "^1.16.4",
+        "select2": "^4.0.10",
+        "slick-carousel": "^1.8.1"
     }
 }

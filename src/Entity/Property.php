@@ -19,7 +19,7 @@ class Property
         0 => 'Electric',
         1 => 'Gas',
         2 => 'Oil',
-        4 => 'Wood'
+        3 => 'Wood'
     ];
 
 
@@ -112,6 +112,11 @@ class Property
      */
     private $updated_at;
 
+	/**
+	 * @var Picture|null
+	 */
+    private $picture;
+
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Picture", mappedBy="property", orphanRemoval=true, cascade={"persist"})
      */
@@ -123,6 +128,16 @@ class Property
 	 *     })
 	 */
     private $pictureFiles;
+
+    /**
+     * @ORM\Column(type="float", scale=4, precision= 6)
+     */
+    private $lat;
+
+    /**
+     * @ORM\Column(type="float", scale=4, precision= 7)
+     */
+    private $lng;
 
     public function __construct ()
     {
@@ -220,9 +235,9 @@ class Property
     }
 
 	public function getFormattedPrice(): string
-                   {
-                       return number_format($this->price, 0, '', ' ') ;
-                   }
+	{
+		return number_format($this->price, 0, '', ' ') ;
+	}
 
     public function setPrice(int $price): self
     {
@@ -237,9 +252,9 @@ class Property
     }
 
 	public function getHeatType(): string
-                                             	{
-                                             		return self::HEAT[$this->heat];
-                                             	}
+                                                               	{
+                                                               		return self::HEAT[$this->heat];
+                                                               	}
 
     public function setHeat(int $heat): self
     {
@@ -355,19 +370,27 @@ class Property
  * @return Collection|Picture[]
  */
 	public function getPictures(): Collection
-	{
-		return $this->pictures;
-	}
+    {
+        return $this->pictures;
+    }
 
 	/**
 	 * @return null|Picture
 	 */
 	public function getPicture(): ?Picture
+    {
+        return $this->picture;
+    }
+
+	/**
+	 * @param Picture $picture
+	 *
+	 * @return Property
+	 */
+	public function setPicture(Picture $picture): self
 	{
-		if($this->pictures->isEmpty()) {
-			return null;
-		}
-		return $this->pictures->first();
+		$this->picture = $picture;
+		return $this;
 	}
 
     public function addPicture(Picture $picture): self
@@ -397,9 +420,9 @@ class Property
 	 * @return mixed
 	 */
 	public function getPictureFiles()
-	{
-		return $this->pictureFiles;
-	}
+    {
+        return $this->pictureFiles;
+    }
 
 	/**
 	 * @param mixed $pictureFiles
@@ -407,14 +430,38 @@ class Property
 	 * @return Property
 	 */
 	public function setPictureFiles($pictureFiles): self
-	{
-		foreach($pictureFiles as $pictureFile) {
-			$picture = new Picture();
-			$picture->setImageFile($pictureFile);
-			$this->addPicture($picture);
-		}
-		$this->pictureFiles = $pictureFiles;
-		return $this;
-	}
+    {
+        foreach($pictureFiles as $pictureFile) {
+            $picture = new Picture();
+            $picture->setImageFile($pictureFile);
+            $this->addPicture($picture);
+        }
+        $this->pictureFiles = $pictureFiles;
+        return $this;
+    }
+
+    public function getLat(): ?float
+    {
+        return $this->lat;
+    }
+
+    public function setLat(float $lat): self
+    {
+        $this->lat = $lat;
+
+        return $this;
+    }
+
+    public function getLng(): ?float
+    {
+        return $this->lng;
+    }
+
+    public function setLng(float $lng): self
+    {
+        $this->lng = $lng;
+
+        return $this;
+    }
 
 }

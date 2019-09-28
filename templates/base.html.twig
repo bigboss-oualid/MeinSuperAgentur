@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <!--Apporter le css á partir du webpack-->
         <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+        <!--Apporter le css leaflet-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
+        <!--Apporter le css slick pour carousel-->
+        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
 
     </head>
     <body>
@@ -64,6 +68,11 @@
 
         <!--Apporter Js á partir du webpack-->
         <script src="{{ asset('build/app.js') }}"></script>
+
+        <!--Apporter le js du leaflet-->
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="crossorigin=""></script>
+        <!--Apporter le js slick pour carousel-->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         {% block javascript %}{% endblock %}
 
     </body>

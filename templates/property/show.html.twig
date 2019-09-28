@@ -16,13 +16,18 @@
                     Bitte überprüfen Sie, ob Ihr Formular korrekt ist
                 </div>
             {% endif %}
+
             <div class="row">
                 <div class="col-md-8">
-                    {% if property.filename %}
-                        <img class="card-img-top" src="{{ vich_uploader_asset(property, 'imageFile') | imagine_filter('medium') }}" >
-                    {% else %}
-                        <img class="card-img-top" src="{{ '/images/properties/empty.jpg' | imagine_filter('medium') }}" >
-                    {% endif %}
+                    <div data-slider>
+                        {% if property.pictures is empty %}
+                            <img class="card-img-top" src="{{ '/images/empty.jpg' | imagine_filter('medium') }}" >
+                        {% else %}
+                            {% for picture in property.pictures %}
+                                <img class="card-img-top" src="{{ vich_uploader_asset(picture, 'imageFile') | imagine_filter('medium') }}" >
+                            {% endfor %}
+                        {% endif %}
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <h1>{{ property.title }}</h1>
@@ -93,9 +98,9 @@
                     </li>
                     {% endfor %}
                 </ul>
-
             </div>
         </div>
+        <div id="map" style="width: 100%; height: 400px" data-lat="{{ property.lat }}" data-lng="{{ property.lng }}" class="mb-4"></div>
     </div>
 {% endblock %}
 
