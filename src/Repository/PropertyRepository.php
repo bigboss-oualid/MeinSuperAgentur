@@ -63,6 +63,7 @@ class PropertyRepository extends ServiceEntityRepository
 
         }
 
+	    dump($search->getLat(),$search->getLng(),$search->getDistance());
         if(($lat = $search->getLat()) && ($lng = $search->getLng()) && ($distance = $search->getDistance()))
         {
         	$query = $query

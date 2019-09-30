@@ -54,7 +54,8 @@ class PropertySearchType extends AbstractType
 			        '100 Km'=> 100,
 			        '150 Km'=> 150,
 			        '200 Km'=> 200,
-		        ]
+		        ],
+		        'empty_data' => '10',
 	        ])
 	        ->add('lat', HiddenType::class)
 	        ->add('lng', HiddenType::class)
