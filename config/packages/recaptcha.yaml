@@ -1,0 +1,11 @@
+recaptcha:
+  key: '%env(GOOGLE_RECAPTCHA_KEY)%'
+  secret: '%env(GOOGLE_RECAPTCHA_SECRET)%'
+
+#Utiliser la clé pour button recaptcha dans le formulaire de Contact
+#services:
+  #recaptcha.type:
+    #class: Bigboss\RecaptchaBundle\Type\RecaptchaSubmitType
+    #tags: ['form.type']
+    #arguments:
+      #$key: '6Ld4MLsUAAAAAJFL-AWXUdYuYwDhKZY_P92PHz4h'

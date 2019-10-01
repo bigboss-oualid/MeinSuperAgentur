@@ -120,6 +120,15 @@
     "fig/link-util": {
         "version": "1.0.0"
     },
+    "google/recaptcha": {
+        "version": "1.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.1",
+            "ref": "d087df3e087f50da3955f2def05079380da5894b"
+        }
+    },
     "imagine/imagine": {
         "version": "v0.7.1"
     },

@@ -10,7 +10,7 @@ if (inputAddress !== null) {
         container: inputAddress
     });
     place.on('change', e => {
-        document.querySelector('#property_city').value = e.suggestion.city;
+        document.querySelector('#property_city').value = e.suggestion.county;
         document.querySelector('#property_postal_code').value = e.suggestion.postcode;
         document.querySelector('#property_lat').value = e.suggestion.latlng.lat;
         document.querySelector('#property_lng').value = e.suggestion.latlng.lng;
@@ -32,6 +32,7 @@ if (searchAddress !== null) {
 let $ = require('jquery');
 require('../css/app.css');
 require('select2')
+
 //Carousel Admin Edit
 $('[data-slider]').slick({
     dots: true,

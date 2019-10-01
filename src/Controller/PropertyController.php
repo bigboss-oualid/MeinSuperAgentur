@@ -76,7 +76,7 @@ class PropertyController extends AbstractController
 
 
 	    $contact = new Contact();
-	    $contact->setProperty($property);
+	    $contact->setProperty($property->setPicture($property->getPictures()[0]));
 	    $form = $this->createForm(ContactType::class, $contact);
 	    $form->handleRequest($request);
 
